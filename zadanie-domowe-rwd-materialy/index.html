@@ -12,6 +12,8 @@
 
 <body>
     <nav id="main-nav">
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
         <ul class="menu">
             <li class="menu-item"> <a href="#about">o mnie</a> </li>
             <li class="menu-item"> <a href="#skills">umiejętności</a> </li>
@@ -101,19 +103,26 @@
     <!-- contact -->
     <section id="contact">
         <div class="contact-data">
-            <h2>Jacek <span>Kowalczyk</span></h2>
-            <address>
+            <h2>Jacek <span>Kowalczyk</span></h2> <address>
                 ul. Filtrowa 75<br>
                 01-110 Wrszawa <br><br>
                 e-mail: <a href="mailto:zxspace1@gmail.com">
                     zxspace1@gmail.com
                 </a>
             </address>
-             </div>
-             <div class="contact-form">
-                 
-             </div>
+            <div class="contact-social-icons"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" name="name" placeholder="Imię i nazwisko">
+                <input type="email" name="email" placeholder="Adres e-mail">
+                <textarea type="message" name="email" placeholder="Wiadomość"></textarea>
+                <input type="submit" value="wyślij"> </form>
+        </div>
     </section>
+    <footer>
+        <p class="copyright">Copyright &copy Krystian Dziopa</p>
+    </footer>
 </body>
 
 </html>
