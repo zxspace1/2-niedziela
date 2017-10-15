@@ -278,3 +278,4 @@ blockquote:not([lang*='en'])::after {
 #pudelko1:hover > #pudełko2 {
   transform:rotateY(180deg);
 }
+/*zad 16*/
