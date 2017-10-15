@@ -1,3 +1,120 @@
-body {
+
+.square1 {
+    width: 400px;
+    height: 400px;
     background-color: aqua;
+    position: relative;
+}
+.square2 {
+    
+    width: 50%;
+    height: 50%;
+    border: 1px;
+    background-color: green;
+    position: absolute;
+    top: 25%;
+    transform: translateX(50%);
+        
+    
+}
+/*ikony*/
+
+.circle {
+	border-radius: 50%;
+	font-size: 50px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+	}
+.icon-wrapper .fa-facebook {
+    
+    line-height: 100px;
+	background: #3B5998;
+	color: #FFFFFF;
+    
+	}
+/*gradient*/
+#grad1 {
+    height: 205px;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */
+}
+/*prosty sposób*/
+div {
+    height: 25px;
+    margin: 5px;
+}
+#gradient {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/*resp video*/
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+/*fonty*/
+ul {
+    list-style-type: none;
+}
+li.fahand-bullet::before {
+    content: '\';
+}
+
+/*zmiana koloru trzcionki */
+
+input[type='text']::placeholder {
+color: red;
+}
+input[type='text']:-ms-nput-placeholder {
+color: red;
+}
+input[type='text']::-moz-placeholder {
+color: green;
+}
+input[type='email']::placeholder {
+    color: goldenrod;
+}
+
+/*nadanie koloru linku*/
+a {
+    font-size: 20px;
+    color: hotpink;
+    text-decoration: none;
+    line-height: 30px;
+}
+a:hover {
+    text-decoration: underline;
+}
+a[href$="doc"] {
+    color: red;
+}
+
+a[href$="docx"] {
+    color: blue;
+}
+/*8*/
+q[lang*='en'], blockquote[lang*='en'] {
+    quotes: "*" "*";
+}
+q[lang*='en']::before, blockquote[lang*='en']::before {
+    content: open-quote;
+}
+
+q[lang*='en']::after, blockquote[lang*='en']::after {
+    content: close-quote;
+}
+q:not([lang*='en']), blockquote:not([lang*='en']) {
+    quotes: "\022" "\022";
+}
+q:not[lang*='en']::before, blockquote:not([lang*='en'])::before {
+    content: open-quote;
+}
+
+q:not([lang*='en'])::after, blockquote:not([lang*='en'])::after {
+    content: close-quote;
 }
