@@ -1,12 +1,11 @@
-
 .square1 {
     width: 400px;
     height: 400px;
     background-color: aqua;
     position: relative;
 }
+
 .square2 {
-    
     width: 50%;
     height: 50%;
     border: 1px;
@@ -14,82 +13,106 @@
     position: absolute;
     top: 25%;
     transform: translateX(50%);
-        
-    
 }
+
+
 /*ikony*/
 
 .circle {
-	border-radius: 50%;
-	font-size: 50px;
+    border-radius: 50%;
+    font-size: 50px;
     height: 100px;
     width: 100px;
     display: inline-block;
     text-align: center;
-	}
+}
+
 .icon-wrapper .fa-facebook {
-    
     line-height: 100px;
-	background: #3B5998;
-	color: #FFFFFF;
-    
-	}
+    background: #3B5998;
+    color: #FFFFFF;
+}
+
+
 /*gradient*/
+
 #grad1 {
     height: 205px;
-    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    /* Standard syntax (must be last) */
 }
+
+
 /*prosty sposób*/
+
 div {
     height: 25px;
-    margin: 5px;
+    margin: 0px;
 }
+
 #gradient {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
+
 /*resp video*/
+
 .video {
     width: 100%;
     height: 100%;
 }
 
+
 /*fonty*/
+
 ul {
     list-style-type: none;
 }
+
 li.fahand-bullet::before {
     content: '\';
+
 }
+
 
 /*zmiana koloru trzcionki */
 
 input[type='text']::placeholder {
-color: red;
+    color: red;
 }
+
 input[type='text']:-ms-nput-placeholder {
-color: red;
+    color: red;
 }
+
 input[type='text']::-moz-placeholder {
-color: green;
+    color: green;
 }
+
 input[type='email']::placeholder {
     color: goldenrod;
 }
 
+
 /*nadanie koloru linku*/
+
 a {
     font-size: 20px;
     color: hotpink;
     text-decoration: none;
     line-height: 30px;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 a[href$="doc"] {
     color: red;
 }
@@ -97,24 +120,161 @@ a[href$="doc"] {
 a[href$="docx"] {
     color: blue;
 }
+
+
 /*8*/
-q[lang*='en'], blockquote[lang*='en'] {
+
+q[lang*='en'],
+blockquote[lang*='en'] {
     quotes: "*" "*";
 }
-q[lang*='en']::before, blockquote[lang*='en']::before {
+
+q[lang*='en']::before,
+blockquote[lang*='en']::before {
     content: open-quote;
 }
 
-q[lang*='en']::after, blockquote[lang*='en']::after {
+q[lang*='en']::after,
+blockquote[lang*='en']::after {
     content: close-quote;
 }
-q:not([lang*='en']), blockquote:not([lang*='en']) {
+
+q:not([lang*='en']),
+blockquote:not([lang*='en']) {
     quotes: "\022" "\022";
 }
-q:not[lang*='en']::before, blockquote:not([lang*='en'])::before {
+
+q:not[lang*='en']::before,
+blockquote:not([lang*='en'])::before {
     content: open-quote;
 }
 
-q:not([lang*='en'])::after, blockquote:not([lang*='en'])::after {
+q:not([lang*='en'])::after,
+blockquote:not([lang*='en'])::after {
     content: close-quote;
+}
+
+
+/*zad9*/
+
+
+/*zad10*/
+
+.przyklad {
+    overflow: hidden;
+    padding: 0;
+    width: 600px;
+    height: 400px;
+    border: 4px solid red;
+}
+
+.przyklad img {
+    transition-duration: 7s;
+    margin: 0 auto;
+    display: block;
+}
+
+.przyklad img:hover {
+    transform: scale(2.7);
+    -webkit-transform: scale(2.7);
+    -moz-transform: scale(2.7);
+    z-index: 0;
+}
+
+
+/*zad 11*/
+
+.fa-heart {
+    line-height: 100px;
+    color: red;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(2.0);
+    }
+    100% transform: scale(1);
+}
+
+
+/*zad 12*/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: chartreuse;
+}
+
+.curtain {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    
+}
+
+.top {
+    background-color: red;
+    animation-name: top-down;
+}
+
+.bottom {
+    position: absolute;
+    background-color: blue;
+    top: 50%;
+    animation-name: bottom-up;
+}
+
+@keyframes top-down {
+    0% {
+        height: 0vh;
+    }
+    100% {
+        height: 50vh;
+    }
+}
+
+@keyframes bottom-up {
+    0% {
+        top: 100vh;
+    }
+    100% {
+        top: 50vh;
+    }
+}
+/*zad 13*/
+.parallax {
+    /* The image used */
+    background-image: url("http://www.motoguzzi.com/mediaObject/motoguzzi-sites/MASTER/bikes/v7-III/v7-III-Stone/main_image/2017/v7-III-Stone_main_image_black_matt/original/v7-III-Stone_main_image_black_matt.jpg");
+    
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*zad 14*/
+#pudelko1 {
+  width:300px;
+  height:300px;
+  margin:0 auto;
+  background-color:#FDD700;
+  perspective:300px;
+}
+
+#pudełko2 {
+  width:100%;
+  height:100%;
+  background-color: green;
+  text-align:center;
+  transition:1s;
+}
+#pudelko1:hover > #pudełko2 {
+  transform:rotateY(180deg);
 }
